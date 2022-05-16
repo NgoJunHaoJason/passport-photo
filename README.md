@@ -15,7 +15,8 @@ References:
 - [TensorFlow.js](https://www.tensorflow.org/js)
 - [BodyPix](https://github.com/tensorflow/tfjs-models/tree/master/body-pix)
 - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-- [Svelte GitHub Pages](https://svelteland.github.io/svelte-kit-blog-demo/deply-to-github/)
+- [GitHub Pages](https://levelup.gitconnected.com/how-to-publish-a-single-page-application-at-no-cost-with-github-pages-react-svelte-etc-897b8f75a22b)
+- [Svelte GitHub Pages](https://github.com/sveltejs/kit/tree/master/packages/adapter-static#github-pages)
 - [ICA Photo Guidelines](https://www.ica.gov.sg/photo-guidelines)
 
 ## Developing

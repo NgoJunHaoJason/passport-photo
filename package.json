@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
+    "deploy": "gh-pages -d build -t true",
     "package": "svelte-kit package",
+    "predeploy": "npm run build",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig ./tsconfig.json",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "next",
     "@sveltejs/kit": "next",
     "@types/cookie": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
@@ -22,6 +25,7 @@
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.13",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
