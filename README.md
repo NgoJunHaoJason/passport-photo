@@ -5,7 +5,8 @@ TODO:
 1. refactor code
 2. improve UI design
 3. handle edge cases / scenarios
-4. add features (e.g. normalisation, brighten background, etc)
+4. add features (e.g. normalisation, brighten / darken background, etc)
+5. use different models depending on device (lighter on mobile)
 
 References:
 
