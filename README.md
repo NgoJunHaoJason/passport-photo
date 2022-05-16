@@ -37,4 +37,17 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+To deploy your app:
+
+```bash
+npm run build
+```
+
+Fix `build/index.html` to use relative path due to [bug in Svelte's static adapter](https://github.com/sveltejs/kit/issues/4528)
+
+- i.e. change `href="/internal"` to `href="./internal"`
+
+Then:
+```bash
+npx gh-pages -d build -t true
+```
