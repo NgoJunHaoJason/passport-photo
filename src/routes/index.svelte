@@ -68,6 +68,7 @@
     console.log("convert");
     const cropInfo = await processPhoto(photo);
     displayPassportPhoto(cropInfo);
+    convertButton.disabled = true;
   };
 
   const displayPassportPhoto = ({ x, y, scaleRatio }: any) => {
@@ -97,7 +98,7 @@
 <SubHeader />
 <div>
   <div class="text-center">
-    <label for="photo-input" class="text-indigo-500 rounded border border-indigo-500 px-1">
+    <label for="photo-input" class="text-indigo-500 rounded border border-2 border-indigo-500 px-1">
       Select photo
     </label>
     <input
@@ -108,11 +109,8 @@
       on:change={selectPhoto}
       hidden
     />
-  </div>
-
-  <div class="text-center">
     <button
-      class="text-indigo-500 rounded border border-indigo-500 px-1"
+      class="disabled:opacity-75 text-indigo-500 rounded border border-2 border-indigo-500 px-1"
       disabled
       bind:this={convertButton}
       on:click={convert}
