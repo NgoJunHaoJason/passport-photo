@@ -7,7 +7,7 @@
     <!--counter-weight for right corner-->
   </div>
 
-  <h1 class="text-2xl text-sky-500">ICA Passport Photo</h1>
+  <h1 class="text-2xl text-indigo-500">ICA Passport Photo</h1>
 
   <div class="w-12 h-12">
     <GitHubCorner />

@@ -96,28 +96,34 @@
 <Header />
 <SubHeader />
 <div>
-  <label for="photo-input" class="text-indigo-500 rounded border border-indigo-500 px-1">
-    Select photo
-  </label>
-  <input
-    id="photo-input"
-    type="file"
-    accept="image/*"
-    bind:this={photoInput}
-    on:change={selectPhoto}
-    hidden
-  />
-  <br />
-  <button
-    class="text-indigo-500 rounded border border-indigo-500 px-1"
-    disabled
-    bind:this={convertButton}
-    on:click={convert}
-  >
-    Convert
-  </button>
-  <br />
-  <canvas bind:this={canvas} />
+  <div class="text-center">
+    <label for="photo-input" class="text-indigo-500 rounded border border-indigo-500 px-1">
+      Select photo
+    </label>
+    <input
+      id="photo-input"
+      type="file"
+      accept="image/*"
+      bind:this={photoInput}
+      on:change={selectPhoto}
+      hidden
+    />
+  </div>
+
+  <div class="text-center">
+    <button
+      class="text-indigo-500 rounded border border-indigo-500 px-1"
+      disabled
+      bind:this={convertButton}
+      on:click={convert}
+    >
+      Convert
+    </button>
+  </div>
+
+  <div>
+    <canvas class="mx-auto" bind:this={canvas} />
+  </div>
 </div>
 
 <style>
